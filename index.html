@@ -1,79 +1,103 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
-<title>Page Title</title>
-
-
-
-<!-- Facebook Pixel Code  depro-->
-
-<script>
-
-  !function(f,b,e,v,n,t,s)
-
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-
-  n.queue=[];t=b.createElement(e);t.async=!0;
-
-  t.src=v;s=b.getElementsByTagName(e)[0];
-
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-
-  'https://connect.facebook.net/en_US/fbevents.js');
-
-  fbq('init', '588598091893866');
-
-  fbq('track', 'PageView');
-
-</script>
-
-<noscript><img height="1" width="1" style="display:none"
-
-  src="https://www.facebook.com/tr?id=588598091893866&ev=PageView&noscript=1"
-
-/></noscript>
-
-<!-- End Facebook Pixel Code -->
-
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '401935367365005');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=401935367365005&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-
-
+  <title>Pasar online Bandung</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    .judul {
+      color: 000 ;
+    }
+    .harga {
+      color : #fff;
+    }
+  </style>
 </head>
-
 <body>
 
+<div class="jumbotron text-center">
+  <h1>Pasar Online Bandung</h1>
+  <p>hai wargi bandung,cari barang harian disini aja..</p>
+ <!-- <input class="form-control" id="myInput" type="text" placeholder="Search.."> -->
+   <form action="">
+      <input type="text" placeholder="Ketik disini.." id="myInput" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form> 
+</div>
+  
+<div class="container" id="myTable">
+  <div class="row">
+    <div class="col-md-4">
+      <a href="page1.html">
+      <img src="ex1.jpg" width="300px" height="300px">
+      <h3>Tas</h3> 
+      <p>Jasa Pembuatan tas murah</p>
+     </a>
+    </div>
+    <div class="col-md-4">
+      <img src="ex1.jpg" width="300px" height="300px">
+      <h3>celana</h3> 
+      <p>Jasa Pembuatan celana murah</p>
+    </div>
+    <div class="col-md-4">
+      <img src="ex1.jpg" width="300px" height="300px">
+      <h3>sepatu</h3> 
+      <p>Jasa Pembuatan sepatu murah</p>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-md-4">
+      <img src="ex1.jpg" width="300px" height="300px">
+      <h3>kaos kaki</h3> 
+      <p>Jasa Pembuatan kaos kaki murah</p>
+    </div>
+    <div class="col-md-4">
+      <img src="ex1.jpg" width="300px" height="300px">
+      <h3>kulit</h3> 
+      <p>Jasa Pembuatan kulit murah</p>
+    </div>
+    <div class="col-md-4">
+      <img src="ex1.jpg" width="300px" height="300px">
+      <h3>kemeja</h3> 
+      <p>Jasa Pembuatan kemeja murah</p>
+    </div>
+  </div>
+</div>
 
-<h1>Tes pake beberapa source Pixel Facebook</h1>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable div").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 
-
-
+<!-- button chat wa -->
+<!-- Getbutton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "6283822574002", // WhatsApp number
+            call_to_action: "Kontak kami", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /Getbutton.io widget -->
+<!-- button chat wa -->
 
 
 </body>
-
 </html>
